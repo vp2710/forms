@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Forms</h1>
+    <form>
+      <label class="field">
+        <span class="field__text">Label <span class="field__req">*</span></span>
+        <input
+          class="field__input"
+          required
+          type="text"
+          placeholder="Enter your name"
+        />
+      </label>
+      <label class="field">
+        <span class="field__text">Textarea</span>
+        <textarea
+          class="field__textarea"
+          placeholder="Enter your text"
+        ></textarea>
+      </label>
+      <label class="field">
+        <span class="field__text">Select</span>
+        <select class="field__select">
+          <option
+            value="
+        male"
+          >
+            Male
+          </option>
+          <option
+            value="
+        Female"
+          >
+            Female
+          </option>
+        </select>
+      </label>
+
+      <div class="row">
+        <label class="chk">
+          <input class="chk__input" type="checkbox" />
+          <span class="chk__check"></span>
+          <span class="chk__text">Item</span>
+        </label>
+
+        <label class="radio">
+          <input class="radio__input" name="user" type="radio" />
+          <span class="radio__check"></span>
+          <span class="radio__text">Item</span>
+        </label>
+
+        <label class="toggle__checkbox__wrapper">
+          <input class="toggle__checkbox" type="checkbox" id="toggle" />
+          <span class="slider" for="toggle"></span>
+        </label>
+      </div>
+      <button class="btn">Send</button>
+    </form>
+  </body>
+</html>
